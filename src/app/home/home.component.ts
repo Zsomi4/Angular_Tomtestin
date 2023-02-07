@@ -23,4 +23,11 @@ export class HomeComponent implements OnInit {
     this.weightArea = weight / Math.pow(height, 2);
   }
 
+  onKeyup(event: any) {
+    console.log(event.key);
+    if (event.key === 'Enter') 
+    {
+      console.log('A felhasználó megnyomta az Enter gombot.');
+    }
+  }
 }
